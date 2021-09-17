@@ -1,0 +1,18 @@
+<div class="px-3 py-2">
+  <div id="classifica">
+    <div class="row" *ngFor="let p of people">
+      <div class="col-3">
+        {{ p }}
+      </div>
+      <div class="col-8">
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overview-current">
+
+  </div>
+</div>

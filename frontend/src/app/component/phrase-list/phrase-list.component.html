@@ -1,0 +1,32 @@
+
+  <div class="row w-100 mt-2 px-2 py-1 phrase" style="background: #148cf5">
+    <div class="col-2">
+      #47
+    </div>
+    <div class="col">
+      hei strafalcione
+    </div>
+  </div>
+  <div (click)="openAddModal(newPhraseModal)" class="row mt-2 w-100 px-2 py-1 phrase" style="background: #f5a82b">
+    <div class="col-2">
+      +
+    </div>
+    <div class="col">
+      Aggiungi una frase
+    </div>
+  </div>
+
+<ng-template #newPhraseModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Nuova frase</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    modal
+  </div>
+  <div class="modal-footer">
+    footer
+  </div>
+</ng-template>

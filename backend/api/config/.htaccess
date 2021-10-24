@@ -1,0 +1,16 @@
+Header always set Access-Control-Allow-Origin "http://localhost:4200"
+
+# Remove the php extension from the filename
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule api/v1/user/(.*)$ api/v1/user.php?request=$1 [QSA,NC,L]
+RewriteRule api/v1/volume/(.*)$ api/v1/volume.php?request=$1 [QSA,NC,L]
+RewriteRule api/v1/phrase/(.*)$ api/v1/phrase.php?request=$1 [QSA,NC,L]
+RewriteRule api/v1/comment/(.*)$ api/v1/comment.php?request=$1 [QSA,NC,L]
+
+# Set the headers for the restful api
+Header always set Access-Control-Allow-Origin http://localhost:4200
+Header always set Access-Control-Max-Age "1000"
+Header always set Access-Control-Allow-Headers "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding"
+Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"

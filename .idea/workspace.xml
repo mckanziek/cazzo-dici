@@ -11,9 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09f6cdd5-2ba9-49c2-ad1d-4ab3e4595b85" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/v1/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/v1/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/component/graduatory/graduatory.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/component/graduatory/graduatory.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +43,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -50,7 +54,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\work\cazzo-dici\frontend\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\work\cazzo-dici\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -61,7 +65,18 @@
       <recent name="C:\work\cazzo-dici\api\user" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="E2E Tests (cazzo-dici)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -110,23 +125,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="741" y="213" key="NewPhpClassDialog" timestamp="1635085906296">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="741" y="213" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635085906296" />
-    <state x="770" y="447" key="NewPhpFileDialog" timestamp="1635087075458">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="770" y="447" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635087075458" />
-    <state x="718" y="102" key="SettingsEditor" timestamp="1635696274344">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="718" y="102" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1635696274344" />
-    <state x="606" y="52" width="707" height="975" key="find.popup" timestamp="1629822868104">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="606" y="52" width="707" height="975" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1629822868104" />
   </component>
 </project>

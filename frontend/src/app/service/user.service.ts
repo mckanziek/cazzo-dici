@@ -1,11 +1,12 @@
-import {AxiosInstance} from 'axios';
+import {HttpClient} from '@angular/common/http';
 
 export class UserService{
-  BASE_URL_API = 'http://localhost:8000';
+  BASE_URL_API = 'http://localhost:8080';
+  USER_API = `${this.BASE_URL_API}/user`
 
-  constructor(private axios: AxiosInstance) {}
+  constructor(private http: HttpClient) {}
 
   getUsers() {
-    console.log(this.axios.get(`${this.BASE_URL_API}/get`));
+    this.http.get(this.USER_API);
   }
 }

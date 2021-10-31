@@ -11,60 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09f6cdd5-2ba9-49c2-ad1d-4ab3e4595b85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/api/config/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/model/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/model/Phrase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/model/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/model/Volume.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/v1/comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/v1/phrase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/v1/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api/v1/volume.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/container/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/container/home/home.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/model/user.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.browserslistrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/src/app.po.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/e2e/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/container/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/container/home/home.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/container/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/container/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/container/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/container/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customize-bootstrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/customize-bootstrap.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/polyfills.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/v1/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api/v1/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +49,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
-    <property name="ts.external.directory.path" value="C:\work\cazzo-dici\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\work\cazzo-dici\frontend\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -113,17 +62,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="E2E Tests (cazzo-dici)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -171,6 +109,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="741" y="213" key="NewPhpClassDialog" timestamp="1635085906296">
@@ -181,10 +120,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="770" y="447" key="NewPhpFileDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635087075458" />
-    <state x="718" y="102" key="SettingsEditor" timestamp="1631886331026">
+    <state x="718" y="102" key="SettingsEditor" timestamp="1635696274344">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="718" y="102" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1631886331026" />
+    <state x="718" y="102" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1635696274344" />
     <state x="606" y="52" width="707" height="975" key="find.popup" timestamp="1629822868104">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

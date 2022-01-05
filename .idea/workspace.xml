@@ -19,30 +19,18 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09f6cdd5-2ba9-49c2-ad1d-4ab3e4595b85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/config/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/config/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/model/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/model/Phrase.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/Phrase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/model/Volume.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/Volume.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/v1/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/v1/phrase.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/phrase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/v1/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api/v1/volume.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/volume.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/component/graduatory/graduatory.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/component/graduatory/graduatory.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/component/phrase-list/phrase-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/component/phrase-list/phrase-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/component/phrase-list/phrase-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/component/phrase-list/phrase-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/container/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/home/home.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +143,17 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -171,6 +170,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="515" y="246" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635698479147" />
+    <state x="-1164" y="196" key="RollbackChangesDialog" timestamp="1641396193750">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1164" y="196" key="RollbackChangesDialog/0.0.1920.1080/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1641396193750" />
     <state x="452" y="209" key="Vcs.Push.Dialog.v2" timestamp="1635698461017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

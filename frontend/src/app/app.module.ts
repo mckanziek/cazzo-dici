@@ -8,6 +8,9 @@ import { LoginComponent } from './container/login/login.component';
 import { GraduatoryComponent } from './component/graduatory/graduatory.component';
 import { PhraseListComponent } from './component/phrase-list/phrase-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {UserService} from './service/user.service';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,14 +18,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     LoginComponent,
     GraduatoryComponent,
-    PhraseListComponent,
+    PhraseListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

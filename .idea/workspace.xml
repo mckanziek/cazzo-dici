@@ -6,16 +6,43 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09f6cdd5-2ba9-49c2-ad1d-4ab3e4595b85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/config/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/config/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/model/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/model/Phrase.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/Phrase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/model/Volume.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/model/Volume.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/v1/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/v1/phrase.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/phrase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/v1/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api/v1/volume.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main/api/volume.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/component/graduatory/graduatory.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/component/graduatory/graduatory.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/container/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/service/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +69,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -65,14 +93,16 @@
       <recent name="C:\work\cazzo-dici\api\user" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JavaScript Debug.Angular Application">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,11 +149,31 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="72" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636398329697">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="72" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1636398329697" />
+    <state x="515" y="246" key="MultipleFileMergeDialog" timestamp="1635698479147">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="515" y="246" key="MultipleFileMergeDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1635698479147" />
+    <state x="452" y="209" key="Vcs.Push.Dialog.v2" timestamp="1635698461017">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="452" y="209" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1635698461017" />
   </component>
 </project>

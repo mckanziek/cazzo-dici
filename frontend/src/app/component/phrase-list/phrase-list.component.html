@@ -15,18 +15,25 @@
       Aggiungi una frase
     </div>
   </div>
-
 <ng-template #newPhraseModal let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Nuova frase</h4>
+    <h4 class="modal-title" id="modal-basic-title">Nuovo strafalcione</h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
-    modal
+    <input type="text" class="form-control" name="phrase">
+    <input type="text" class="form-control mt-3" name="context">
+    <select class="form-select  mt-3" name="user">
+      <option value="user">Jac</option>
+      <option value="user">Luke</option>
+      <option value="user">Tex</option>
+      <option value="user">Mandy</option>
+      </select>
   </div>
   <div class="modal-footer">
-    footer
+    <button class="modal-button" type="button">Annulla</button>
+    <button class="modal-button" type="button">Aggiungi</button>
   </div>
 </ng-template>

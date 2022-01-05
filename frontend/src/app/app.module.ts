@@ -30,6 +30,10 @@ import {FormsModule} from '@angular/forms';
   providers: [
     UserService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    HomeComponent,
+    PhraseListComponent
+  ]
 })
 export class AppModule { }

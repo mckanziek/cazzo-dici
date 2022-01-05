@@ -14,7 +14,7 @@ export class PhraseListComponent implements OnInit {
   }
 
   openAddModal(content) {
-    this.modalService.open(content, {windowClass: 'dark-modal'});
+    this.modalService.open(content, {modalDialogClass: 'dark-modal'});
   }
 
 }

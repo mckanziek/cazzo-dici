@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {User} from '../../model/user.interface';
 
 @Component({
   selector: 'app-graduatory',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./graduatory.component.scss']
 })
 export class GraduatoryComponent implements OnInit {
+
+  @Input() users:   User[];
 
   constructor() { }
 

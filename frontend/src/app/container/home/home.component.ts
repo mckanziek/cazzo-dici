@@ -9,7 +9,7 @@ import {User} from '../../model/user.interface';
 })
 export class HomeComponent implements OnInit {
 
-  people: User[];
+  users: User[];
 
   constructor(private userService: UserService) { }
 
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
 
   getUsers() {
     this.userService.getUsers().subscribe(data => {
-      this.people = data as User[];
+      console.log(data);
     });
   }
 

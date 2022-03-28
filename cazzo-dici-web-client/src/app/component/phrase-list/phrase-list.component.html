@@ -1,0 +1,38 @@
+<div class="row w-100 mt-2 px-2 py-1 phrase" [style.background-color]="phrase.owner.color" *ngFor="let phrase of phrases">
+  <div class="col-2">
+    #{{phrase.id}}
+  </div>
+  <div class="col">
+    {{phrase.value}}
+  </div>
+</div>
+<div (click)="openAddModal(newPhraseModal)" class="row mt-2 w-100 px-2 py-1 phrase" style="background: #f5a82b" *ngIf="isActive()">
+  <div class="col-2">
+    +
+  </div>
+  <div class="col">
+    Aggiungi una frase
+  </div>
+</div>
+
+<!-- modal -->
+
+<ng-template #newPhraseModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Nuovo strafalcione</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <input type="text" class="form-control" name="phrase" [(ngModel)]="newPhrase.value">
+    <input type="text" class="form-control mt-3" name="context" [(ngModel)]="newPhrase.context">
+    <select class="form-select  mt-3" name="user" [(ngModel)]="newPhrase.owner">
+      <option [ngValue]="user" *ngFor="let user of users">{{ user.name }}</option>
+    </select>
+  </div>
+  <div class="modal-footer">
+    <button class="modal-button px-3 py-1" type="button" (click)="modal.dismiss()">Annulla</button>
+    <button class="modal-button px-3 py-1" type="button" (click)="save()">Aggiungi</button>
+  </div>
+</ng-template>

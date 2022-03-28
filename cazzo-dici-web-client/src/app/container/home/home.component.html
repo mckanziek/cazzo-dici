@@ -1,0 +1,17 @@
+<div style="background: #2c2c2c" class="p-3">
+  <app-graduatory [users]="users" [totalPhrases]="phrases.length" [volumeId]="selectedVolume.id"></app-graduatory>
+</div>
+<div>
+  <div class="row w-100 px-3 mt-3">
+    <div class="col-6">
+      <select class="custom-select" [(ngModel)]="selectedVolume" (change)="init()">
+        <option *ngFor="let volume of volumes" [ngValue]="volume">{{ volume.year }}</option>
+      </select>
+    </div>
+    <div class="col-6 d-flex justify-content-end">
+      <span class="badge rounded-pill bg-success" *ngIf="isActive()">Attivo</span>
+      <span class="badge rounded-pill bg-danger" *ngIf="!isActive()">Concluso</span>
+    </div>
+    <app-phrase-list class="mx-3 mt-3" [phrases]="phrases" [users]="users" [volume]="selectedVolume" (onAddPhrase)="init()"></app-phrase-list>
+  </div>
+</div>

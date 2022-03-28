@@ -1,0 +1,16 @@
+<h6>Chi sarà il nostro perdente?</h6>
+
+<div class="mt-3">
+  <div *ngFor="let user of users">
+    <div class="row">
+      <div class="col-3">
+        {{ user.name}}
+      </div>
+      <div class="col">
+        <div class="progress" style="background: #2c2c2c" *ngIf="totalPhrases > 0">
+          <div id="bar-{{user.id}}" class="progress-bar" [style.background-color]="user.color" [style.width.%]="getTotalPhrasesForUser(user.id)" role="progressbar">{{getTotalPhrasesForUser(user.id).toFixed(0)}}%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,6 +5,7 @@ import {Volume} from '../../model/volume.interface';
 import {Phrase} from '../../model/phrase.interfafe';
 import {User} from '../../model/user.interface';
 import {UserService} from '../../service/user.service';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +21,8 @@ export class HomeComponent implements OnInit {
 
   constructor(private volumeService: VolumeService,
               private phraseService: PhraseService,
-              private userService: UserService) { }
+              private userService: UserService,
+              private modalService: NgbModal) { }
 
   ngOnInit(): void {
     this.users = this.userService.getUsers();
@@ -34,8 +36,24 @@ export class HomeComponent implements OnInit {
   }
 
   isActive() {
-    const now = new Date();
-    return this.selectedVolume.start < now && this.selectedVolume.end > now;
+    return this.selectedVolume.end == undefined;
   }
+
+  openEndVolume(content) {
+    this.modalService.open(content, {windowClass: 'dark-modal'});
+  }
+
+  getLosers() {
+    return this.phraseService.getLosers(this.selectedVolume.id);
+  }
+
+  endVolume() {
+    this.modalService.dismissAll();
+    this.volumeService.endVolume(this.selectedVolume.id);
+    this.init();
+    console.log(this.volumeService.dataMock);
+  }
+
+
 
 }

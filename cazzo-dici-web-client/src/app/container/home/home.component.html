@@ -5,13 +5,34 @@
   <div class="row w-100 px-3 mt-3">
     <div class="col-6">
       <select class="custom-select" [(ngModel)]="selectedVolume" (change)="init()">
-        <option *ngFor="let volume of volumes" [ngValue]="volume">{{ volume.year }}</option>
+        <option *ngFor="let volume of volumes" [ngValue]="volume">Volume {{ volume.id + 1 }} - {{ volume.year }}</option>
       </select>
     </div>
     <div class="col-6 d-flex justify-content-end">
-      <span class="badge rounded-pill bg-success" *ngIf="isActive()">Attivo</span>
+      <span class="badge rounded-pill bg-success" *ngIf="isActive()" (click)="openEndVolume(endVolumeModal)">Attivo</span>
       <span class="badge rounded-pill bg-danger" *ngIf="!isActive()">Concluso</span>
     </div>
     <app-phrase-list class="mx-3 mt-3" [phrases]="phrases" [users]="users" [volume]="selectedVolume" (onAddPhrase)="init()"></app-phrase-list>
   </div>
 </div>
+
+<!-- modal -->
+
+<ng-template #endVolumeModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Termina Volume {{ selectedVolume.id }} - {{ selectedVolume.year }}</h4>
+    <button type="button" class="modal-close-button close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div>
+      Sei sicuro di voler chiudere Volume {{ selectedVolume.id }} - {{ selectedVolume.year }} e iniziarne uno nuovo?
+    </div>
+    <div>In questo modo condannerai <span *ngFor="let loser of getLosers()" class="badge mr-1" style="border-radius: 40px" [style.background-color]="loser.color">{{ loser.name }}</span></div>
+  </div>
+  <div class="modal-footer">
+    <button class="modal-button px-3 py-1" type="button" (click)="modal.dismiss()">Annulla</button>
+    <button class="modal-button px-3 py-1" type="button" (click)="endVolume()">Termina</button>
+  </div>
+</ng-template>

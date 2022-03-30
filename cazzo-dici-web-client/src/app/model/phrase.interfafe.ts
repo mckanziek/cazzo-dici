@@ -1,4 +1,5 @@
 import {User} from './user.interface';
+import {Comment} from './comment.interface';
 
 export interface Phrase {
   id: number;

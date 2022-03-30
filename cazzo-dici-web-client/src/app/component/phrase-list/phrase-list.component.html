@@ -1,12 +1,46 @@
-<div class="row w-100 mt-2 px-2 py-1 phrase" [style.background-color]="phrase.owner.color" *ngFor="let phrase of phrases">
-  <div class="col-2">
+<div class="row w-100 mt-2 px-2 py-1 phrase" [style.background-color]="phrase.owner.color"
+     *ngFor="let phrase of phrases" [ngClass]="{'expanded': expanded == phrase.id}">
+
+  <div class="col-2" (click)="expand(phrase.id)">
     #{{phrase.id}}
   </div>
-  <div class="col">
+  <div class="col" *ngIf="expanded != phrase.id" (click)="expand(phrase.id)">
     {{phrase.value}}
   </div>
+  <div class="col" *ngIf="expanded == phrase.id" (click)="expand(phrase.id)">
+    <div>
+      {{ phrase.owner.name }} - {{ phrase.date.getDate() }}/{{ phrase.date.getMonth() }}
+      /{{ phrase.date.getFullYear() }}
+    </div>
+    <div>
+      {{ phrase.value }}
+    </div>
+    <div>
+      {{ phrase.context }}
+    </div>
+    <div>
+      Rapportato da: {{ phrase.createdBy.name }}
+    </div>
+  </div>
+  <div class="col-12" *ngIf="expanded == phrase.id">
+    <div class="my-3">
+      <div class="centre-line"><span [style.background-color]="phrase.owner.color">Comment</span></div>
+    </div>
+    <div *ngFor="let comment of phrase.comments" class="p-2 mb-2" style="background: rgba(194, 194, 194, 0.2); color: #c2c2c2">
+      <div>{{ comment.username }} - {{ comment.date.getDate() }}/{{ comment.date.getMonth() }}/{{ comment.date.getFullYear() }} {{ comment.date.getHours() }}:{{ comment.date.getMinutes() }}</div>
+      <div>{{ comment.value }}</div>
+    </div>
+    <div class="centre-line"></div>
+    <div class="mt-2">
+      <input type="text" class="form-control custom-form" placeholder="Username..." [(ngModel)]="newComment.username">
+      <textarea class="form-control custom-form mt-2" placeholder="Lascia un commento..." [(ngModel)]="newComment.value"></textarea>
+    </div>
+      <button class="mt-2 btn btn-block modal-button w-100 mb-1" (click)="addComment(phrase.id)">Invia commento</button>
+
+  </div>
 </div>
-<div (click)="openAddModal(newPhraseModal)" class="row mt-2 w-100 px-2 py-1 phrase" style="background: #f5a82b" *ngIf="isActive()">
+<div (click)="openAddModal(newPhraseModal)" class="row mt-2 w-100 px-2 py-1 phrase" style="background: #f5a82b"
+     *ngIf="isActive()">
   <div class="col-2">
     +
   </div>
@@ -20,19 +54,20 @@
 <ng-template #newPhraseModal let-modal>
   <div class="modal-header">
     <h4 class="modal-title" id="modal-basic-title">Nuovo strafalcione</h4>
-    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+    <button type="button" class="close modal-close-button" aria-label="Close" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
-    <input type="text" class="form-control" name="phrase" [(ngModel)]="newPhrase.value">
-    <input type="text" class="form-control mt-3" name="context" [(ngModel)]="newPhrase.context">
-    <select class="form-select  mt-3" name="user" [(ngModel)]="newPhrase.owner">
+    <input type="text" class="form-control modal-input" name="phrase" [(ngModel)]="newPhrase.value" placeholder="Strafalcione...">
+    <input type="text" class="form-control mt-3  modal-input" name="context" [(ngModel)]="newPhrase.context" placeholder="Contesto...">
+    <select class="form-select modal-input mt-3" name="user" [(ngModel)]="newPhrase.owner">
+      <option selected disabled value="undefined">Detto da...</option>
       <option [ngValue]="user" *ngFor="let user of users">{{ user.name }}</option>
     </select>
   </div>
   <div class="modal-footer">
-    <button class="modal-button px-3 py-1" type="button" (click)="modal.dismiss()">Annulla</button>
+    <button class="modal-button px-3 py-1" type="button" (click)="modal.dismiss(); reset()">Annulla</button>
     <button class="modal-button px-3 py-1" type="button" (click)="save()">Aggiungi</button>
   </div>
 </ng-template>

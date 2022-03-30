@@ -4,6 +4,7 @@ import {Phrase} from '../../model/phrase.interfafe';
 import {User} from '../../model/user.interface';
 import {PhraseService} from '../../service/phrase.service';
 import {Volume} from '../../model/volume.interface';
+import {Comment} from '../../model/comment.interface';
 
 @Component({
   selector: 'app-phrase-list',
@@ -25,6 +26,8 @@ export class PhraseListComponent implements OnInit {
   onAddPhrase: EventEmitter<any> = new EventEmitter<any>();
 
   newPhrase: Phrase;
+  expanded: number;
+  newComment: Comment;
 
   constructor(private modalService: NgbModal, private phraseService: PhraseService) { }
 
@@ -59,11 +62,33 @@ export class PhraseListComponent implements OnInit {
       context: undefined,
       value: undefined
     };
+
+    this.newComment = {
+      id: undefined,
+      value: undefined,
+      date: undefined,
+      username: undefined
+    };
   }
 
   isActive() {
-    const now = new Date();
-    return this.volume.start < now && this.volume.end > now;
+    return this.volume.end == undefined;
   }
 
+  expand(phraseId: number) {
+    if (this.expanded == phraseId) {
+      this.expanded = undefined;
+    } else {
+      this.expanded = phraseId;
+    }
+
+    this.reset();
+  }
+
+  addComment(phraseId) {
+    this.newComment.date = new Date();
+    this.phraseService.addComment(this.newComment, phraseId);
+    this.onAddPhrase.emit();
+    this.reset();
+  }
 }
